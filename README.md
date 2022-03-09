@@ -1,6 +1,6 @@
 # Rock, Paper, Scissors Game
 
-### Refactored version of [previous game] when learning Javascript (https://github.com/htder/Rock-Paper-Scissors).
+### Refactored version of [previous game](https://github.com/htder/Rock-Paper-Scissors)when learning Javascript.
 
 --- 
 The goal of this refactoring is to:
