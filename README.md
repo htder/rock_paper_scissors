@@ -5,7 +5,7 @@
 --- 
 The goal of this refactoring is to:
 1. Improve the UI 
-2. Follow a mobile first programming design strategy
+2. Follow a mobile first design strategy
 3. Write cleaner, more self documenting code 
 4. Deploy to my personal site
 5. Use ES6 features
