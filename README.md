@@ -2,7 +2,7 @@
 
 ### Refactored version of [previous game](https://github.com/htder/Rock-Paper-Scissors), created when first learning Javascript.
 
-###### [live demo](https://admiring-sammet-95461d.netlify.app/)
+### [live demo](https://admiring-sammet-95461d.netlify.app/)
 
 ---
 
