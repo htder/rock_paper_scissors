@@ -12,11 +12,27 @@ function hasUserWon(userChoice, computerChoice) {
 
   const winLoseTable = [
     [0, 1, -1],
-    [1, 0, -1],
+    [-1, 0, 1],
     [1, -1, 0],
   ];
   // 0 - Draw, 1 - User wins, -1 - User loses
-  return winLoseTable[userChoice][computerChoice];
+  return winLoseTable[computerChoice][userChoice];
 }
 
-export { computerPlay, hasUserWon };
+function getUserChoiceAsNumber(userChoice) {
+  const regex = /(\d)/g;
+  const matches = regex.exec(userChoice.classList);
+  return matches[0];
+}
+
+function isGameOver(userScore, computerScore) {
+  if (userScore === 5) {
+    return 1;
+  }
+  if (computerScore === 5) {
+    return -1;
+  }
+  return 0;
+}
+
+export { computerPlay, isGameOver, hasUserWon, getUserChoiceAsNumber };

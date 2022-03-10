@@ -4,12 +4,6 @@ body {
   height: 100%;
 }
 
-.user-won,
-.computer-won,
-.play-again-container {
-  display: none;
-}
-
 h1.title {
   font-size: 2.2rem;
   padding: 1rem 0;
@@ -42,11 +36,31 @@ h1,
   font-size: 1.3rem;
 }
 
-/* .play-again-container { */
-/*   display: flex; */
-/*   justify-content: center; */
-/*   border: 1px solid black; */
-/*   margin: 1rem auto; */
-/*   width: 30%; */
-/*   padding: 0.5rem; */
-/* } */
+.user-selected {
+  box-shadow: 0.5rem 0.5rem black, -0.5rem -0.5rem green;
+}
+
+.computer-selected {
+  box-shadow: 0.5rem 0.5rem red, -0.5rem -0.5rem #ccc;
+}
+
+.user-computer-selected {
+  box-shadow: 0.5rem 0.5rem red, -0.5rem -0.5rem green;
+}
+
+.show-winner {
+  display: flex;
+}
+
+.hide {
+  display: none;
+}
+
+.play-again-show {
+  display: flex;
+  justify-content: center;
+  border: 1px solid black;
+  margin: 1rem auto;
+  width: 30%;
+  padding: 0.5rem;
+}
