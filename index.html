@@ -37,24 +37,72 @@
     </section>
 
     <!--- Choices -->
-    <section class="choices-container">
-      <div class="rock button 0">
-        <img src="images/rock/rock64.png" />
-        <p>Rock</p>
-      </div>
-      <div class="paper button 1">
-        <img src="images/paper/paper64.png" />
-        <p>Paper</p>
-      </div>
-      <div class="scissors button 2">
-        <img src="images/scissors/scissors64.png" />
-        <p>Scissors</p>
-      </div>
-    </section>
+    <div class="choices-play-again-container">
+      <section class="choices-container">
+        <div class="rock button 0">
+          <!-- <img src="images/rock/rock64.png" /> -->
+          <img
+            srcset="
+              images/rock/rock64.png   64w,
+              images/rock/rock128.png 128w,
+              images/rock/rock256.png 256w,
+              images/rock/rock512.png 512w
+            "
+            sizes="
+              (max-width: 896px) 64px,
+              (max-width: 1200px) 128px,
+              (max-width: 1600px ) 256px,
+              512px "
+            src="images/rock/rock64.png"
+            alt="hand making rock symbol"
+          />
 
-    <!-- Game over -->
-    <section class="hide play-again-container">
-      <p>Play again?</p>
-    </section>
+          <p>Rock</p>
+        </div>
+        <div class="paper button 1">
+          <!-- <img src="images/paper/paper64.png" /> -->
+          <img
+            srcset="
+              images/paper/paper64.png   64w,
+              images/paper/paper128.png 128w,
+              images/paper/paper256.png 256w,
+              images/paper/paper512.png 512w
+            "
+            sizes="
+              (max-width: 896px) 64px,
+              (max-width: 1200px) 128px,
+              (max-width: 1600px) 256px,
+              512px"
+            src="images/rock/paper64.png"
+            alt="hand making paper symbol"
+          />
+          <p>Paper</p>
+        </div>
+        <div class="scissors button 2">
+          <!-- <img src="images/scissors/scissors64.png" /> -->
+          <img
+            srcset="
+              images/scissors/scissors64.png   64w,
+              images/scissors/scissors128.png 128w,
+              images/scissors/scissors256.png 256w,
+              images/scissors/scissors512.png 512w
+            "
+            sizes="
+              (max-width: 896px) 64px,
+              (max-width: 1200px) 128px,
+              (max-width: 1600px) 256px,
+              512px"
+            src="images/rock/paper64.png"
+            alt="hand making paper symbol"
+          />
+          <p>Scissors</p>
+        </div>
+      </section>
+
+      <!-- Game over -->
+      <section class="hide play-again-container">
+        <p>Play again?</p>
+      </section>
+    </div>
   </body>
 </html>

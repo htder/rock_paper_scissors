@@ -25,8 +25,8 @@ const userWinner = document.querySelector('.user-won');
 const computerWinner = document.querySelector('.computer-won');
 
 const score = {
-  user: 4,
-  computer: 4,
+  user: 0,
+  computer: 0,
 };
 
 function resetScores() {
