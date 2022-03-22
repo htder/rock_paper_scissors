@@ -55,16 +55,15 @@ h1,
   min-width: 5rem;
 }
 
-.rock:active,
-.paper:active,
-.scissors:active {
-  border: 1px solid black;
-}
-
 .rock:hover,
 .paper:hover,
 .scissors:hover {
-  border: 1px solid blue;
+  color: green;
+  text-transform: uppercase;
+}
+
+.item-title:hover {
+  color: green;
 }
 
 .user-selected {
@@ -117,7 +116,6 @@ h1,
 @media screen and (min-width: 896px) and (max-width: 1200px) and (orientation: landscape) {
   .choices-container {
     flex-direction: row;
-    border: 1px solid black;
   }
   html {
     font-size: 14px;
